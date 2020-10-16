@@ -1,38 +1,500 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  background-image: url(Image/background.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(146 224 236);
+  cursor: pointer;
+}
+
+/* scroll */
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* main */
+.mainContainer nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2.5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(44, 33, 68);
+  z-index: 2;
+}
+
+.mainContainer nav .logo {
+  flex: 1 1 auto;
+}
+
+.mainContainer nav img {
+  width: 70px;
+  height: 50px;
+}
+
+.mainContainer nav .tab {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.mainContainer .mainPic {
+  background-image: linear-gradient(
+      to top,
+      rgba(14, 32, 136, 0.52),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url("Image/main_background.jpg");
+  position: relative;
+  background-position: center;
+  height: 94vh;
+  background-size: cover;
+  z-index: 1;
+}
+
+.mainContainer .mainPic .intro {
+  margin: 0 10%;
+  text-align: right;
+  color: rgb(255, 255, 255);
+  padding-top: 15%;
+  line-height: 6rem;
+}
+
+.mainContainer .mainPic .intro h1 {
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+.mainContainer .mainPic .intro p {
+  text-align: left;
+  font-size: 2rem;
+  color: rgb(241, 243, 243);
+}
+
+/* about */
+.aboutContainer {
+  background-image: url(Image/background.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+.aboutTag {
+  margin-top: 3%;
+}
+
+.aboutContainer h1 {
+  text-align: center;
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+.aboutContainer .aboutMain {
+  background-color: rgb(210 210 210);
+  margin: 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8%;
+  padding: 3%;
+  align-content: center;
+}
+
+.aboutContainer p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  margin: 0 5%;
+  font-weight: bold;
+}
+
+/* project */
+.projectContainer {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.projectContainer > h1 {
+  padding-top: 2%;
+}
+
+.projectContainer h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projectContainer .projectMain {
+  margin-top: 3%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: column;
+  width: 100%;
+}
+
+.projectContainer .projectMain .projectItems {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projectContainer .projectMain .projectItems img {
+  width: 80px;
+  height: 80px;
+}
+
+.projectContainer .showDetail {
+  margin-top: 5%;
+}
+
+/* project-detail */
+.projectDetailContainer {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 8%;
+  margin-top: 1%;
+  background-color: rgb(210 210 210);
+  border-radius: 5%;
+  padding: 5% 0;
 }
 
-.App-link {
-  color: #61dafb;
+.projectDetailContainer img {
+  width: 300px;
+  height: 320px;
+  padding-bottom: 3%;
+  border-radius: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.projectDetailContainer .DetailImage {
+  flex: 1 1 60%;
+}
+
+.projectDetailContainer .DetailImage img {
+  width: 100%;
+}
+
+.sc-eCApGN.cfKeGQ.rec.rec-carousel {
+  width: 80%;
+}
+
+.projectDetailContainer .DetailInform {
+  border-radius: 5%;
+  flex: 1 1 37%;
+  background-color: rgb(180, 183, 184);
+  margin-right: 3%;
+}
+
+.projectDetailContainer .DetailInform h2 {
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.projectDetailContainer .DetailInform .demoFrontBack {
+  margin-bottom: 2%;
+}
+
+.projectDetailContainer .DetailInform .demoFrontBack a {
+  color: blue;
+}
+
+.projectDetailContainer .builtWith {
+  /* color: rgb(80, 94, 105); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.projectDetailContainer .builtWith ul {
+  list-style: none;
+}
+
+.projectDetailContainer .builtWith ul {
+  border: 2px solid rgb(88, 86, 88);
+  margin: 2px;
+  padding: 8px;
+  border-radius: 15%;
+  font-weight: bold;
+}
+
+.projectDetailContainer .phara {
+  /* color: rgb(80, 94, 105); */
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin: 0 5%;
+  line-height: 20px;
+}
+
+/* blog */
+
+.blogContainer {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.blogContainer h1 {
+  margin-top: 10%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.blogContainer .contents {
+  border-radius: 5%;
+  background-color: rgb(210 210 210);
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2%;
+  margin: 1% 10%;
+}
+
+.blogContainer .contents .blogMap {
+  max-width: 32%;
+  border-radius: 5%;
+  padding: 3%;
+  background-color: rgb(180, 183, 184);
+  margin: 1%;
+}
+
+.blogContainer .contents img {
+  width: 15vw;
+  height: 15vh;
+}
+
+/* Contact */
+.contactContainer {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+.contactContainer .p-heading1 {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.contactContainer .contactMain {
+  background-color: rgb(210 210 210);
+  border-radius: 5%;
+  margin: 3% 20%;
+  text-align: center;
+  padding: 2%;
+}
+
+.contactContainer .contactMain input {
+  border: none;
+  border-radius: 2%;
+  padding: 1%;
+  width: 50%;
+}
+
+.contactContainer .contactMain h1 {
+  font-size: 3rem;
+  margin: 2% 0;
+}
+
+.contactContainer .contactMain label {
+  font-size: 1.5rem;
+}
+
+.contactContainer .contactMain textarea {
+  width: 50%;
+  height: 30vh;
+}
+
+.contactContainer .contactMain .submitButton {
+  border: none;
+  margin: 5px;
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+/* hamburger button */
+.menuShow {
+  display: none;
+}
+.menuIcon {
+  display: none;
+}
+.hamburger {
+  flex-flow: column;
+  font-family: "Nunito", sans-serif;
+}
+
+.hamburger a {
+  border-bottom: 2px solid #f0e68c;
+  padding-bottom: 3%;
+  color: black;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  /* main */
+  .mainContainer .mainPic .intro {
+    padding-top: 30%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mainContainer .hamburger {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  .mainContainer nav .tab {
+    display: none;
+  }
+
+  .mainContainer nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(44, 33, 68);
+    z-index: 2;
+  }
+
+  .mainContainer nav .logo {
+    display: none;
+  }
+
+  /* hamburger menu */
+  .menuIcon {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    color: purple;
+  }
+
+  .menuShow {
+    display: block;
+  }
+
+  /* about */
+  .aboutContainer p {
+    font-size: 0.9rem;
+  }
+
+  .aboutContainer .aboutMain {
+    margin: 0 10%;
+  }
+
+  /* projectDetail */
+  .projectDetailContainer .DetailImage {
+    flex: 1 1 100%;
+  }
+
+  .projectDetailContainer img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .projectDetailContainer .DetailInform {
+    margin: 0 3%;
+    margin-top: 2%;
+  }
+
+  .projectDetailContainer .DetailInform h1 {
+    font-size: 1.5rem;
+  }
+
+  .projectDetailContainer .DetailInform a {
+    font-size: 0.9rem;
+  }
+
+  .projectDetailContainer .DetailInform h2 {
+    font-size: 1.2rem;
+  }
+
+  .projectDetailContainer .DetailInform li {
+    font-size: 0.8rem;
+  }
+
+  .projectDetailContainer .DetailInform p {
+    font-size: 0.8rem;
+  }
+
+  /* blog */
+  .blogContainer .contents p:nth-child(2) {
+    display: none;
+  }
+
+  /* contact */
+  .contactContainer .contactMain input {
+    width: 80%;
+  }
+
+  .contactContainer .contactMain textarea {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  
+  /* main */
+  .mainContainer .mainPic .intro h1 {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  .mainContainer .mainPic .intro p {
+    text-align: left;
+    font-size: 1.3rem;
+    color: rgb(241, 243, 243);
+  }
+
+  /* about */
+  .aboutContainer p {
+    font-size: 0.7rem;
+  }
+  .aboutContainer .aboutMain {
+    margin: 0 8%;
+  }
+
+  /* project */
+  .projectContainer .projectMain .projectItems img {
+    width: 50px;
+    height: 50px;
   }
 }
