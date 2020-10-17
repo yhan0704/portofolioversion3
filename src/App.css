@@ -6,7 +6,6 @@
 
 html {
   position: relative;
-  background-image: url(Image/background.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -15,7 +14,7 @@ html {
 
 a {
   text-decoration: none;
-  color: rgb(146 224 236);
+  color: darkcyan;
   cursor: pointer;
 }
 
@@ -55,17 +54,17 @@ a {
   padding: 2.5%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(44, 33, 68);
+  background-color: rgb(62 56 73);
   z-index: 2;
 }
 
 .mainContainer nav .logo {
-  flex: 1 1 auto;
+  flex: 2 1 auto;
 }
 
 .mainContainer nav img {
-  width: 70px;
-  height: 50px;
+  width: 258px;
+  height: 72px;
 }
 
 .mainContainer nav .tab {
@@ -78,80 +77,121 @@ a {
 }
 
 .mainContainer .mainPic {
+  font-family: 'Ubuntu', sans-serif;
   background-image: linear-gradient(
       to top,
-      rgba(14, 32, 136, 0.52),
-      rgba(117, 19, 93, 0.73)
+      rgba(237, 239, 248, 0.52),
+      rgba(83, 14, 247, 0.73)
     ),
-    url("Image/main_background.jpg");
+    url("Image/keyboard.jpg");
   position: relative;
   background-position: center;
   height: 94vh;
   background-size: cover;
   z-index: 1;
+  margin-top: 3%;
 }
 
 .mainContainer .mainPic .intro {
   margin: 0 10%;
   text-align: right;
   color: rgb(255, 255, 255);
-  padding-top: 15%;
+  padding-top: 10%;
   line-height: 6rem;
 }
 
 .mainContainer .mainPic .intro h1 {
-  text-align: left;
-  font-size: 2.5rem;
+  text-align: right;
+  font-size: 2.3rem;
 }
 
 .mainContainer .mainPic .intro p {
-  text-align: left;
-  font-size: 2rem;
+  text-align: right;
+  font-size: 1.8rem;
   color: rgb(241, 243, 243);
 }
 
-/* about */
-.aboutContainer {
-  background-image: url(Image/background.jpg);
-  background-size: cover;
-  background-position: center;
-  font-family: "Roboto", sans-serif;
-  height: 100%;
+.mainContainer .mainPic .toProject{
+  position: absolute;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  bottom:20%;
+  left:40%;
 }
 
-.aboutTag {
-  margin-top: 3%;
+.mainContainer .mainPic .toProjectArrow{
+  position: absolute;
+  bottom:5%;
+  left:48%;
+}
+
+.mainContainer .mainPic .toProjectArrow a{
+  font-size: 3rem;
+  color:#ffdada;
+
+}
+
+.mainContainer .mainPic .toProjectArrow{
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+.mainContainer .mainPic .toProjectArrow{
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
+/* about */
+.aboutContainer {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-image: url(Image/wood_background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .aboutContainer h1 {
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   padding-top: 5%;
-  font-weight: bold;
 }
 
 .aboutContainer .aboutMain {
-  background-color: rgb(210 210 210);
-  margin: 0 20%;
+  background-color: blanchedalmond;
+  margin: 0 15%;
+  margin-top:4%;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 8%;
   padding: 3%;
   align-content: center;
+  border-radius: 2%;
 }
 
 .aboutContainer p {
   font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 5%;
   font-weight: bold;
 }
 
 /* project */
 .projectContainer {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top:5%;
   text-align: center;
   width: 100%;
   height: 100%;
+  background-image: url(Image/wood_background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .projectContainer > h1 {
@@ -163,7 +203,7 @@ a {
 }
 
 .projectContainer .projectMain {
-  margin-top: 3%;
+  margin-top: 4%;
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
@@ -182,17 +222,20 @@ a {
 
 .projectContainer .showDetail {
   margin-top: 5%;
+  color:#eee6e6
 }
 
 /* project-detail */
 .projectDetailContainer {
+  background-image: url(Image/wood_background.jpg);
+  background-size: cover;
+  background-position: center;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 8%;
   margin-top: 1%;
-  background-color: rgb(210 210 210);
   border-radius: 5%;
   padding: 5% 0;
 }
@@ -219,7 +262,7 @@ a {
 .projectDetailContainer .DetailInform {
   border-radius: 5%;
   flex: 1 1 37%;
-  background-color: rgb(180, 183, 184);
+  background-color:blanchedalmond;
   margin-right: 3%;
 }
 
@@ -261,39 +304,45 @@ a {
   padding-bottom: 10px;
   margin: 0 5%;
   line-height: 20px;
+  font-size: 0.8rem;
 }
 
 /* blog */
 
 .blogContainer {
+  background-image: url(Image/wood_background.jpg);
+  background-size: cover;
+  background-position: center;
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
 }
 
 .blogContainer h1 {
-  margin-top: 10%;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top:5%;
   font-size: 2.5rem;
   text-align: center;
 }
 
 .blogContainer .contents {
   border-radius: 5%;
-  background-color: rgb(210 210 210);
+  background-color: blanchedalmond;
   display: flex;
   justify-content: space-evenly;
   flex-flow: row;
   flex-wrap: wrap;
   text-align: center;
   padding: 2%;
-  margin: 1% 10%;
+  margin: 0% 10%;
+  margin-top:5%;
 }
 
 .blogContainer .contents .blogMap {
+  border: 2px solid darksalmon;
   max-width: 32%;
   border-radius: 5%;
   padding: 3%;
-  background-color: rgb(180, 183, 184);
   margin: 1%;
 }
 
@@ -304,19 +353,23 @@ a {
 
 /* Contact */
 .contactContainer {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url(Image/wood_background.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  font-family: "Nunito", sans-serif;
+  padding-bottom:5%;
 }
 
 .contactContainer .p-heading1 {
-  margin-top: 5%;
   text-align: center;
+  padding-top:8%;
 }
 
 .contactContainer .contactMain {
-  background-color: rgb(210 210 210);
-  border-radius: 5%;
-  margin: 3% 20%;
+  background-color: blanchedalmond;
+  border-radius: 2%;
+  margin: 3% 10%;
   text-align: center;
   padding: 2%;
 }
@@ -326,11 +379,14 @@ a {
   border-radius: 2%;
   padding: 1%;
   width: 50%;
+  margin:2%;
+  height: 45px;
 }
 
-.contactContainer .contactMain h1 {
-  font-size: 3rem;
-  margin: 2% 0;
+.contactContainer .contactMain h3{
+  color:black;
+  padding-top:2%;
+  text-align: center;
 }
 
 .contactContainer .contactMain label {
@@ -339,14 +395,41 @@ a {
 
 .contactContainer .contactMain textarea {
   width: 50%;
-  height: 30vh;
+  height: 20vh;
+  padding: 1%;
+  border: none;
 }
 
 .contactContainer .contactMain .submitButton {
+  background-color: darksalmon;
   border: none;
-  margin: 5px;
+  margin-top: 2%;
   padding: 3px;
   font-size: 1.1rem;
+  width:30%;
+  height: 40px;
+}
+
+/* Footer */
+.footerContainer{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #9d7272;
+}
+
+.footerContainer .icons{
+  padding-top:5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerContainer a{
+  color:black;
+  font-size: 3rem;
+}
+
+.footerContainer .licence{
+  text-align: center;
+  padding:4% 0;
 }
 
 /* hamburger button */
@@ -497,4 +580,12 @@ a {
     width: 50px;
     height: 50px;
   }
+
+  /* move to project Arrow */
+  .mainContainer .mainPic .toProjectArrow{
+    position: absolute;
+    bottom:5%;
+    left:55%;
+  }
+  
 }

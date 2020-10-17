@@ -6,6 +6,7 @@ import Contact from "./Components/Contact";
 import Main from "./Components/Main";
 import Projects from "./Components/Projects";
 import ScrollTopArrow from "./Components/ScrollTopArrow";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Blog />
       <Contact />
       <ScrollTopArrow />
+      <Footer />
     </div>
   );
 }

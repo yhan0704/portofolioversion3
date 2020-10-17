@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import logo from "../Image/logo.jpg";
+import My_Logo from "../Image/Logo.png";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
@@ -14,8 +15,8 @@ export default function Navigation() {
     <div className="mainContainer">
       <nav>
         <div className="logo">
-          <a href="http://localhost:3000/">
-            <img src={logo} alt="logo" />
+          <a href="http://www.youngchnai.com/">
+            <img src={My_Logo} alt="logo" />
           </a>
         </div>
         <div className="tab">
@@ -123,6 +124,19 @@ export default function Navigation() {
         <div className="intro">
           <h1>Hello, I am Young Han</h1>
           <p>I am a software engineer. </p>
+        </div>
+        <h1 className="toProject">Click to see my Projects</h1>
+        <div className="toProjectArrow">
+          <Link
+            activeClass="active"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <AiOutlineArrowDown />
+          </Link>
         </div>
       </div>
     </div>
