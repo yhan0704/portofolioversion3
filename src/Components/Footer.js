@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { DiGithubAlt } from "react-icons/di";
+import { SiMedium } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -14,13 +15,20 @@ export default function Footer() {
           <AiFillLinkedin />
         </a>
         <br />
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/yhan0704/"
+        >
+          <DiGithubAlt />
+        </a>
         <br />
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.linkedin.com/in/yhan1205/"
+          href="https://hanyc1205.medium.com/"
         >
-          <DiGithubAlt />
+          <SiMedium />
         </a>
       </div>
       <div className="licence">©2020 Young Han all rights reserved.</div>

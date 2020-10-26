@@ -14,7 +14,7 @@ html {
 
 a {
   text-decoration: none;
-  color: darkcyan;
+  color: darkgray;
   cursor: pointer;
 }
 
@@ -77,7 +77,7 @@ a {
 }
 
 .mainContainer .mainPic {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-image: linear-gradient(
       to top,
       rgba(237, 239, 248, 0.52),
@@ -111,43 +111,49 @@ a {
   color: rgb(241, 243, 243);
 }
 
-.mainContainer .mainPic .toProject{
+.mainContainer .mainPic .toProject {
   position: absolute;
   margin: 0 auto;
   font-size: 1.3rem;
-  bottom:20%;
-  left:40%;
+  bottom: 20%;
+  left: 40%;
 }
 
-.mainContainer .mainPic .toProjectArrow{
+.mainContainer .mainPic .toProjectArrow {
   position: absolute;
-  bottom:5%;
-  left:48%;
+  bottom: 5%;
+  left: 48%;
 }
 
-.mainContainer .mainPic .toProjectArrow a{
+.mainContainer .mainPic .toProjectArrow a {
   font-size: 3rem;
-  color:#ffdada;
-
+  color: #ffdada;
 }
 
-.mainContainer .mainPic .toProjectArrow{
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
+.mainContainer .mainPic .toProjectArrow {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
-.mainContainer .mainPic .toProjectArrow{
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
+.mainContainer .mainPic .toProjectArrow {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
 @-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 @keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
-
 
 /* about */
 .aboutContainer {
@@ -159,7 +165,7 @@ a {
 }
 
 .aboutContainer h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
   padding-top: 5%;
 }
@@ -167,12 +173,28 @@ a {
 .aboutContainer .aboutMain {
   background-color: blanchedalmond;
   margin: 0 15%;
-  margin-top:4%;
+  margin-top: 4%;
   display: flex;
   flex-wrap: wrap;
   padding: 3%;
   align-content: center;
   border-radius: 2%;
+}
+
+.aboutContainer .aboutMain .myPic {
+  flex: 1 1 40%;
+  align-self: center;
+  text-align: center;
+}
+
+.aboutContainer .aboutMain .texts {
+  flex: 1 1 60%;
+}
+
+.aboutContainer .aboutMain .myPic img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 
 .aboutContainer p {
@@ -184,8 +206,8 @@ a {
 
 /* project */
 .projectContainer {
-  font-family: 'Ubuntu', sans-serif;
-  padding-top:5%;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 5%;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -222,7 +244,11 @@ a {
 
 .projectContainer .showDetail {
   margin-top: 5%;
-  color:#eee6e6
+  color: #eee6e6;
+}
+
+.projectContainer .showDetail h1 {
+  height: 50vh;
 }
 
 /* project-detail */
@@ -262,7 +288,7 @@ a {
 .projectDetailContainer .DetailInform {
   border-radius: 5%;
   flex: 1 1 37%;
-  background-color:blanchedalmond;
+  background-color: blanchedalmond;
   margin-right: 3%;
 }
 
@@ -319,8 +345,8 @@ a {
 }
 
 .blogContainer h1 {
-  font-family: 'Ubuntu', sans-serif;
-  padding-top:5%;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 5%;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -334,8 +360,8 @@ a {
   flex-wrap: wrap;
   text-align: center;
   padding: 2%;
-  margin: 0% 10%;
-  margin-top:5%;
+  margin: 0% 15%;
+  margin-top: 5%;
 }
 
 .blogContainer .contents .blogMap {
@@ -347,29 +373,29 @@ a {
 }
 
 .blogContainer .contents img {
-  width: 15vw;
-  height: 15vh;
+  width: 10vw;
+  height: 10vh;
 }
 
 /* Contact */
 .contactContainer {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-image: url(Image/wood_background.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-bottom:5%;
+  padding-bottom: 5%;
 }
 
 .contactContainer .p-heading1 {
   text-align: center;
-  padding-top:8%;
+  padding-top: 8%;
 }
 
 .contactContainer .contactMain {
   background-color: blanchedalmond;
   border-radius: 2%;
-  margin: 3% 10%;
+  margin: 3% 15%;
   text-align: center;
   padding: 2%;
 }
@@ -379,13 +405,13 @@ a {
   border-radius: 2%;
   padding: 1%;
   width: 50%;
-  margin:2%;
+  margin: 2%;
   height: 45px;
 }
 
-.contactContainer .contactMain h3{
-  color:black;
-  padding-top:2%;
+.contactContainer .contactMain h3 {
+  color: black;
+  padding-top: 2%;
   text-align: center;
 }
 
@@ -406,30 +432,30 @@ a {
   margin-top: 2%;
   padding: 3px;
   font-size: 1.1rem;
-  width:30%;
+  width: 30%;
   height: 40px;
 }
 
 /* Footer */
-.footerContainer{
-  font-family: 'Ubuntu', sans-serif;
+.footerContainer {
+  font-family: "Ubuntu", sans-serif;
   background-color: #9d7272;
 }
 
-.footerContainer .icons{
-  padding-top:5%;
+.footerContainer .icons {
+  padding-top: 5%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.footerContainer a{
-  color:black;
+.footerContainer a {
+  color: black;
   font-size: 3rem;
 }
 
-.footerContainer .licence{
+.footerContainer .licence {
   text-align: center;
-  padding:4% 0;
+  padding: 4% 0;
 }
 
 /* hamburger button */
@@ -451,7 +477,7 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
   /* main */
   .mainContainer .mainPic .intro {
     padding-top: 30%;
@@ -500,7 +526,14 @@ a {
   }
 
   .aboutContainer .aboutMain {
-    margin: 0 10%;
+    margin: 0 15%;
+  }
+
+  .aboutContainer .aboutMain .myPic img {
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 2%;
   }
 
   /* projectDetail */
@@ -554,7 +587,6 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
-  
   /* main */
   .mainContainer .mainPic .intro h1 {
     text-align: left;
@@ -582,10 +614,16 @@ a {
   }
 
   /* move to project Arrow */
-  .mainContainer .mainPic .toProjectArrow{
+  .mainContainer .mainPic .toProjectArrow {
     position: absolute;
-    bottom:5%;
-    left:55%;
+    bottom: 5%;
+    left: 55%;
   }
-  
+}
+
+@media only screen and (max-width: 330px) {
+  .aboutContainer .aboutMain .myPic img {
+    width: 150px;
+    height: 150px;
+  }
 }

@@ -47,8 +47,11 @@ export default function Projects() {
           />
         </div>
       </div>
-      <div className="showDetail" style={{ display: showDetail === false ? "block"  : "none" }}>
-      <h1>Please choose one of my project.</h1>
+      <div
+        className="showDetail"
+        style={{ display: showDetail === false ? "block" : "none" }}
+      >
+        <h1>Please choose one of my project.</h1>
       </div>
     </div>
   );

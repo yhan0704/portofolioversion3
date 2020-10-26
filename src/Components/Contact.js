@@ -20,7 +20,10 @@ class Contact extends Component {
       message_html: message,
     };
     emailjs.send(
+      "gmail",
+      "template_WmMa65lq",
       templateParams,
+      "user_bOxidh5NeezNOLoxDHpDX"
     );
     this.resetForm();
   }
@@ -40,7 +43,10 @@ class Contact extends Component {
       <div className="contactContainer" id="contact">
         <h1 className="p-heading1">Contact Me</h1>
         <div className="contactMain">
-        <h3 className="contactH3"> I WILL BE GLAD TO ANSWER YOUR QUESTIONS!</h3>
+          <h3 className="contactH3">
+            {" "}
+            I WILL BE GLAD TO ANSWER YOUR QUESTIONS!
+          </h3>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formBasicEmail">
               <br />

@@ -138,29 +138,39 @@
       "id": 1,
       "name": "Ruby Faker",
       "image": "https://freesvg.org/img/Fake-Real-Black.png",
-      "title": "Faker generates data at random",
       "blogUrl": "https://medium.com/@hanyc1205/faker-gem-ruby-on-rails-c848fd252869"
     },
     {
       "id": 2,
       "name": "Favascript-Binding",
       "image": "https://storage.needpix.com/rsynced_images/knot-30531_1280.png",
-      "title": "Invoked at the global scope",
       "blogUrl": "https://medium.com/@hanyc1205/javascript-bind-f13176466c45"
     },
     {
       "id": 3,
       "name": "React Router",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png",
-      "title": "Single Page Application",
       "blogUrl": "https://medium.com/@hanyc1205/react-router-4185ab5c0a7d"
     },
     {
       "id": 4,
       "name": "Grid CSS",
       "image": "https://storage.needpix.com/rsynced_images/grid-1138243_1280.png",
-      "title": "Layouts more easily",
       "blogUrl": "https://medium.com/@hanyc1205/grid-css-88103180217b"
+    },
+    {
+      "id": 5,
+      "name": "React.js Tutorial - Part 1",
+      "image": "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "title": "JSX",
+      "blogUrl": "https://hanyc1205.medium.com/react-js-tutorial-part-1-jsx-8e0200012766"
+    },
+    {
+      "id": 6,
+      "name": "React.js Tutorial - Part 2",
+      "image": "https://images.unsplash.com/photo-1516381548400-349d680edb56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "title": "Start React",
+      "blogUrl": "https://hanyc1205.medium.com/react-js-tutorial-part-2-install-react-39df4d8ae345"
     }
   ]
 }
