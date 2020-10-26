@@ -20,10 +20,7 @@ class Contact extends Component {
       message_html: message,
     };
     emailjs.send(
-      "gmail",
-      "template_WmMa65lq",
       templateParams,
-      "user_bOxidh5NeezNOLoxDHpDX"
     );
     this.resetForm();
   }
