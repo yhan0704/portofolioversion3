@@ -30,10 +30,10 @@
         "react-super-responsive-table"
       ],
       "paragraph": [
-        "This project is that inform Park near the DMV areas and Keep tracking which Park user have been.",
-        "Fetched “Park API” back-end using Ruby on Rails, ",
-        "Built API front end(Redux, React) / Stylish(CSS, Bootstrap), and",
-        "Developed Database using Postgres"
+        "-This project is that inform Park near the DMV areas and Keep tracking which Park user have been.",
+        "-Fetched “Park API” back-end using Ruby on Rails, ",
+        "-Built API front end(Redux, React) / Stylish(CSS, Bootstrap), and",
+        "-Developed Database using Postgres"
       ],
       "title": "Tracking Park! ",
       "front": "https://github.com/yhan0704/GoParkApp-Frontend",
@@ -61,9 +61,9 @@
       "built": ["React", "CSS", "Ruby on Rails", "Semantic"],
       "title": "Find out your favorite!",
       "paragraph": [
-        "This project will inform Harry Potter’s characters, spells and users can add their favorite.",
-        "Fetched Harry Potter’s API for back-end using Ruby on Rails, ",
-        "Built API front end using React, and Style using Semantic and CSS"
+        "-This project will inform Harry Potter’s characters, spells and users can add their favorite.",
+        "-Fetched Harry Potter’s API for back-end using Ruby on Rails, ",
+        "-Built API front end using React, and Style using Semantic and CSS"
       ],
       "front": "https://github.com/yhan0704/-harry_frontend",
       "back": "https://github.com/yhan0704/harry_backend",
@@ -88,47 +88,48 @@
       ],
       "title": "My Portfolio",
       "paragraph": [
-        "Developed responsive web design.",
-        "Built with self API, Deployed with AWS CloudFront, and ",
-        "Used domain with AWS Route 53"
+        "-Developed responsive web design.",
+        "-Built with self API, Deployed with AWS CloudFront, and ",
+        "-Used domain with AWS Route 53"
       ],
       "front": "https://github.com/yhan0704/portfolio"
     },
     {
       "id": 4,
-      "name": "Calculator",
-      "image": "https://miro.medium.com/max/1050/1*i9qbjPrKtD2mcdPfPSgCgQ.png",
+      "name": "My Movie",
+      "image": "https://live.staticflickr.com/7132/7122764951_a1e3078ff1_b.jpg",
       "webImage": [
         {
           "name": "photo-1",
-          "url": "https://miro.medium.com/max/1050/1*i9qbjPrKtD2mcdPfPSgCgQ.png"
+          "url": "https://media.giphy.com/media/JKMl6X5vQuFZwTUBn1/giphy.gif"
         }
       ],
       "built": ["React", "React Hook", "CSS"],
-      "title": "Calculate!",
+      "title": "Wathing Movies!",
       "paragraph": [
-        "One of my personal project.",
-        "provided simple mathematical functions in a beautifully designed app",
-        "Built with originally with HTML, CSS, React"
+        "-Implemented React hooks with useState, useEffect",
+        "-Used TMDB API",
+        "-Popular Movies on the first page",
+        "-Filtered movies using movie's name"
       ],
-      "front": "https://github.com/yhan0704/calculator"
+      "front": "https://github.com/yhan0704/tmdbMovie"
     },
     {
       "id": 5,
-      "name": "Todo-List",
-      "image": "https://miro.medium.com/max/875/1*svNEO9Pkkh9s0QhG0jctbA.png",
+      "name": "Searching Gifs",
+      "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "webImage": [
         {
           "name": "photo-1",
-          "url": "https://miro.medium.com/max/700/1*svNEO9Pkkh9s0QhG0jctbA.png"
+          "url": "https://media.giphy.com/media/h5GrBwS8f47hFs8A7x/giphy.gif"
         }
       ],
-      "built": ["React", "Custom Hook", "Context API", "Styled-Components"],
+      "built": ["Redux", "Thunk", "React", "CSS"],
       "title": "Todo-List",
       "paragraph": [
-        "One of my personal project.",
-        "This Todo app will not make you to forget what you need to do.",
-        "Provided add, delete, and update tasks."
+        "-Implemented Redux with useDispatch, useSelector, and thunk",
+        "-Used Gifs API and fetched using useEffect",
+        "-Showed images that user search"
       ],
       "front": "https://github.com/yhan0704/todolist"
     }
