@@ -9,20 +9,22 @@ export default function Blog() {
         <h1>Blogs</h1>
         <div className="contents">
           {states.blogs.map((blog) => (
-            <div className="blogMap" key={blog.id}>
-              <a
-                style={{ textDecoration: "none", color: "black" }}
-                rel="noopener noreferrer"
-                href={blog.blogUrl}
-                target="_blank"
-              >
-                <img src={blog.image} alt={blog.name} />
-                <div className="subContents">
-                  <p>{blog.name}</p>
-                  <p>{blog.title}</p>
-                </div>
-              </a>
-            </div>
+            <>
+              <div className="blogMap" key={blog.id}>
+                <a
+                  style={{ textDecoration: "none", color: "black" }}
+                  rel="noopener noreferrer"
+                  href={blog.blogUrl}
+                  target="_blank"
+                >
+                  <img src={blog.image} alt={blog.name} />
+                  <div className="subContents"></div>
+                </a>
+                <h3>
+                  <strong>{blog.name}</strong>
+                </h3>
+              </div>
+            </>
           ))}
         </div>
       </div>

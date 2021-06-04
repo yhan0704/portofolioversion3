@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { DiGithubAlt } from "react-icons/di";
 import { SiMedium } from "react-icons/si";
-
 export default function Footer() {
   return (
     <div className="footerContainer">

@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "name": "GoPark",
+      "name": "Go Park",
       "image": "https://www.publicdomainpictures.net/pictures/30000/velka/bench-in-a-park.jpg",
       "webImage": [
         {
@@ -30,10 +30,7 @@
         "react-super-responsive-table"
       ],
       "paragraph": [
-        "-This project is that inform Park near the DMV areas and Keep tracking which Park user have been.",
-        "-Fetched “Park API” back-end using Ruby on Rails, ",
-        "-Built API front end(Redux, React) / Stylish(CSS, Bootstrap), and",
-        "-Developed Database using Postgres"
+        "This project is that inform Park near the DMV areas and Keep tracking which Park users have been."
       ],
       "title": "Tracking Park! ",
       "front": "https://github.com/yhan0704/GoParkApp-Frontend",
@@ -42,35 +39,49 @@
     },
     {
       "id": 2,
-      "name": "HarryPotter",
-      "image": "https://s0.geograph.org.uk/geophotos/06/38/10/6381095_97380512.jpg",
+      "name": "Social",
+      "image": "https://cdn.pixabay.com/photo/2015/10/21/08/22/media-998990_1280.jpg",
       "webImage": [
         {
           "name": "photo-1",
-          "url": "https://miro.medium.com/max/875/1*MgpZjTB8K1AKwOqkgpBH2g.png"
+          "url": "https://miro.medium.com/max/2414/1*EeR_Oq-Gcg-gLn7s79K9UA.png"
         },
         {
           "name": "photo-2",
-          "url": "https://miro.medium.com/max/875/1*Kw1J2TgoxrWIKksOOgmFnw.png"
+          "url": "https://miro.medium.com/max/2412/1*4de-dkKf1AEAz1gySKtXFg.png"
         },
         {
           "name": "photo-3",
-          "url": "https://miro.medium.com/max/875/1*3Rw1qr_XSdMLBOklqb974w.png"
+          "url": "https://miro.medium.com/max/1898/1*XTwDcQA0OFTowXRpRXt7hg.png"
         }
       ],
-      "built": ["React", "CSS", "Ruby on Rails", "Semantic"],
-      "title": "Find out your favorite!",
+      "built": ["Redux", "Thunk", "React", "Node.js","CSS"],
+      "title": "Social",
       "paragraph": [
-        "-This project will inform Harry Potter’s characters, spells and users can add their favorite.",
-        "-Fetched Harry Potter’s API for back-end using Ruby on Rails, ",
-        "-Built API front end using React, and Style using Semantic and CSS"
+        "Build a full-stack social network single page app with Mern-Stack"
       ],
-      "front": "https://github.com/yhan0704/-harry_frontend",
-      "back": "https://github.com/yhan0704/harry_backend",
-      "demo": "https://harryfrontend.herokuapp.com/"
+      "front": "https://github.com/yhan0704/nodejsReactSocial",
+      "demo": "http://www.youngtechsocial.com/"
     },
     {
       "id": 3,
+      "name": "My Movie",
+      "image": "https://live.staticflickr.com/7132/7122764951_a1e3078ff1_b.jpg",
+      "webImage": [
+        {
+          "name": "photo-1",
+          "url": "https://media.giphy.com/media/JKMl6X5vQuFZwTUBn1/giphy.gif"
+        }
+      ],
+      "built": ["React", "React Hook", "CSS"],
+      "title": "Wathing Movies!",
+      "paragraph": [
+        "Implemented React hooks with useState, useEffect"
+      ],
+      "front": "https://github.com/yhan0704/tmdbMovie"
+    },
+    {
+      "id": 4,
       "name": "Portfolio",
       "image": "https://cdn.pixabay.com/photo/2017/10/31/00/23/portfolio-2903909_960_720.png",
       "webImage": [
@@ -88,88 +99,37 @@
       ],
       "title": "My Portfolio",
       "paragraph": [
-        "-Developed responsive web design.",
-        "-Built with self API, Deployed with AWS CloudFront, and ",
-        "-Used domain with AWS Route 53"
+        "Developed responsive web design."
       ],
-      "front": "https://github.com/yhan0704/portfolio"
-    },
-    {
-      "id": 4,
-      "name": "My Movie",
-      "image": "https://live.staticflickr.com/7132/7122764951_a1e3078ff1_b.jpg",
-      "webImage": [
-        {
-          "name": "photo-1",
-          "url": "https://media.giphy.com/media/JKMl6X5vQuFZwTUBn1/giphy.gif"
-        }
-      ],
-      "built": ["React", "React Hook", "CSS"],
-      "title": "Wathing Movies!",
-      "paragraph": [
-        "-Implemented React hooks with useState, useEffect",
-        "-Used TMDB API",
-        "-Popular Movies on the first page",
-        "-Filtered movies using movie's name"
-      ],
-      "front": "https://github.com/yhan0704/tmdbMovie"
-    },
-    {
-      "id": 5,
-      "name": "Searching Gifs",
-      "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBpY3R1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "webImage": [
-        {
-          "name": "photo-1",
-          "url": "https://media.giphy.com/media/h5GrBwS8f47hFs8A7x/giphy.gif"
-        }
-      ],
-      "built": ["Redux", "Thunk", "React", "CSS"],
-      "title": "Todo-List",
-      "paragraph": [
-        "-Implemented Redux with useDispatch, useSelector, and thunk",
-        "-Used Gifs API and fetched using useEffect",
-        "-Showed images that user search"
-      ],
-      "front": "https://github.com/yhan0704/todolist"
+      "front": "https://github.com/yhan0704/portfolio",
+      "demo":"http://www.youngchnai.com/"
     }
   ],
   "blogs": [
     {
       "id": 1,
-      "name": "Ruby Faker",
-      "image": "https://freesvg.org/img/Fake-Real-Black.png",
-      "blogUrl": "https://medium.com/@hanyc1205/faker-gem-ruby-on-rails-c848fd252869"
-    },
-    {
-      "id": 2,
-      "name": "Favascript-Binding",
-      "image": "https://storage.needpix.com/rsynced_images/knot-30531_1280.png",
+      "name": "Javascript-Binding",
+      "image": "https://images.unsplash.com/photo-1596638787647-904d822d751e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGRpZ2l0YWwlMjBhcnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "blogUrl": "https://medium.com/@hanyc1205/javascript-bind-f13176466c45"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "React Router",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png",
+      "image": "https://images.unsplash.com/photo-1485856407642-7f9ba0268b51?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVhY3R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "blogUrl": "https://medium.com/@hanyc1205/react-router-4185ab5c0a7d"
     },
+
     {
-      "id": 4,
-      "name": "Grid CSS",
-      "image": "https://storage.needpix.com/rsynced_images/grid-1138243_1280.png",
-      "blogUrl": "https://medium.com/@hanyc1205/grid-css-88103180217b"
-    },
-    {
-      "id": 5,
+      "id": 3,
       "name": "React.js Tutorial - Part 1",
-      "image": "https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "image": "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "title": "JSX",
       "blogUrl": "https://hanyc1205.medium.com/react-js-tutorial-part-1-jsx-8e0200012766"
     },
     {
-      "id": 6,
+      "id": 4,
       "name": "React.js Tutorial - Part 2",
-      "image": "https://images.unsplash.com/photo-1516381548400-349d680edb56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "image": "https://images.unsplash.com/photo-1610986602726-19f650133f7a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHJlYWN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "title": "Start React",
       "blogUrl": "https://hanyc1205.medium.com/react-js-tutorial-part-2-install-react-39df4d8ae345"
     }

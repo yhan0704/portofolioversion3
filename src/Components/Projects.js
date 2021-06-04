@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import data from "../data/projects.json";
-import { Route, Link, Switch } from "react-router-dom";
-import ProjectDetail from "./ProjectDetail";
 
 export default function Projects() {
   const [projects] = useState(data.projects);
-  const [showDetail, setShowDetail] = useState(false);
-  const onClick = () => {
-    setShowDetail(true);
-  };
+
   return (
     <div className="projectContainer" id="project">
       <h1>Projects</h1>
@@ -16,42 +11,42 @@ export default function Projects() {
         <div className="projectItems">
           {projects.map((project) => {
             return (
-              <Switch>
-                <Route>
-                  <Link
-                    onClick={onClick}
-                    to={{
-                      pathname: `/projects/${project.name}`,
-                      state: project,
+              <>
+                <div class="imageContainer">
+                  <img
+                    className="image"
+                    style={{
+                      borderRadius: "15%",
                     }}
-                  >
-                    <img
-                      className="image"
-                      style={{
-                        borderRadius: "15%",
-                      }}
-                      src={project.image}
-                      alt={project.name}
-                    />
-                  </Link>
-                </Route>
-              </Switch>
+                    src={project.image}
+                    alt={project.name}
+                  />
+                  <div class="overlay">
+                    <div class="icon">
+                      <p>{project.paragraph}</p>
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <i class="fas fa-sign-in-alt"></i>
+                      </a>{" "}
+                      <a
+                        href={project.front}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </>
             );
           })}
         </div>
-        <div className="proejctDetail">
-          <Route
-            path="/projects/:projectname"
-            exact={true}
-            render={ProjectDetail}
-          />
-        </div>
-      </div>
-      <div
-        className="showDetail"
-        style={{ display: showDetail === false ? "block" : "none" }}
-      >
-        <h1>Please choose one of my project.</h1>
       </div>
     </div>
   );

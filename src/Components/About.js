@@ -1,5 +1,4 @@
 import React from "react";
-import myPic from "../Image/my_pic.png";
 
 export default function About() {
   return (
@@ -7,30 +6,23 @@ export default function About() {
       <div className="aboutContainer">
         <h1>About</h1>
         <div className="aboutMain">
-          <div className="myPic">
-            <img src={myPic} alt="me" />
-          </div>
           <div className="texts">
             <p>
-              I am a driven software engineer with an outstanding work ethic
-              open to contributing my diverse skill set in a junior-level
-              position.
-            </p>
-            <br />
-            <p>
-              I graduated from the University of Maryland, Baltimore County with
-              a Bachelor of Science Degree in Information Systems. After I
-              graduated school, I attended Flatiron School where I honed my
-              skills as a developer.
+              I am a driven software engineer with an outstanding work ethic. I
+              am currently seeking a junior-level position where I will be able
+              to share my diverse skill sets and also to build my experience as
+              a software engineer. Experienced in Redux, React, Selenium, Ruby
+              on Rails, and Java, and performed a wide range of design and
+              coding projects utilizing HTML, CSS, and JavaScript.
             </p>
             <br />
             <p>
               I am passionate about coding because of my drive to solve problems
               and create a final product. Beyond my academic qualifications, I
               continue to advance my skills as a developer by enhancing projects
-              within my portfolio and preparing for the AWS practitioner
+              within my portfolio and also preparing for the AWS practitioner
               certification. I welcome you to take a look at my portfolio and
-              please contact me with any questions you may have.
+              please feel free to contact me with any questions you may have.
             </p>
           </div>
         </div>

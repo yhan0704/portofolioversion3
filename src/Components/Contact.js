@@ -1,93 +1,42 @@
-import React, { Component } from "react";
-import * as emailjs from "emailjs-com";
-// import '../css/Contact.css';
+import React from "react";
+import emailjs from "emailjs-com";
+require("dotenv").config();
 
-import { Button, Form, FormGroup, Input } from "reactstrap";
-class Contact extends Component {
-  state = {
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  };
-  handleSubmit(e) {
+const Contact = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const { email, subject, message } = this.state;
-    let templateParams = {
-      from_name: email,
-      to_name: "hanyc1205",
-      subject: subject,
-      message_html: message,
-    };
-    emailjs.send(
-      "gmail",
-      "template_WmMa65lq",
-      templateParams,
-      "user_bOxidh5NeezNOLoxDHpDX"
-    );
-    this.resetForm();
-  }
-  resetForm() {
-    this.setState({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-  }
-  handleChange = (param, e) => {
-    this.setState({ [param]: e.target.value });
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
-  render() {
-    return (
-      <div className="contactContainer" id="contact">
-        <h1 className="p-heading1">Contact Me</h1>
-        <div className="contactMain">
-          <h3 className="contactH3">
-            {" "}
-            I WILL BE GLAD TO ANSWER YOUR QUESTIONS!
-          </h3>
-          <Form onSubmit={this.handleSubmit.bind(this)}>
-            <FormGroup controlId="formBasicEmail">
-              <br />
-              <Input
-                type="email"
-                name="email"
-                value={this.state.email}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, "email")}
-                placeholder="Enter email"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicName">
-              <br />
-              <Input
-                type="text"
-                name="name"
-                value={this.state.name}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, "name")}
-                placeholder="Name"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicMessage">
-              <br />
-              <Input
-                type="textarea"
-                name="message"
-                className="text-primary"
-                value={this.state.message}
-                placeholder="Message"
-                onChange={this.handleChange.bind(this, "message")}
-              />
-            </FormGroup>
-            <Button className="submitButton" variant="primary" type="submit">
-              Send
-            </Button>
-          </Form>
-        </div>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="contactContainer" id="contact">
+      <h1> Contact Me </h1>
+      <form onSubmit={handleSubmit}>
+        <input placeholder="Name" name="name" />
+        <br />
+        <input placeholder="Email" name="email" />
+        <br />
+        <textarea placeholder="Comment" name="message" />
+        <br />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  );
+};
+
 export default Contact;

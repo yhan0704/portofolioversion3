@@ -23,8 +23,8 @@ const ScrollArrow = () => {
       className="scrollTop"
       onClick={scrollTop}
       style={{
-        height: 40,
-        color: "purple",
+        height: 70,
+        color: "black",
         display: showScroll ? "flex" : "none",
       }}
     />
