@@ -30,7 +30,7 @@
         "react-super-responsive-table"
       ],
       "paragraph": [
-        "This project is that inform Park near the DMV areas and Keep tracking which Park users have been."
+        "This project is to inform users of Parks near the DMV area and to keep track of parks that users have visited"
       ],
       "title": "Tracking Park! ",
       "front": "https://github.com/yhan0704/GoParkApp-Frontend",
@@ -58,7 +58,7 @@
       "built": ["Redux", "Thunk", "React", "Node.js","CSS"],
       "title": "Social",
       "paragraph": [
-        "Build a full-stack social network single page app with Mern-Stack"
+        "This is a Full-Stack social network single page app and built with Mern-Stack"
       ],
       "front": "https://github.com/yhan0704/nodejsReactSocial",
       "demo": "http://www.youngtechsocial.com/"
@@ -76,7 +76,7 @@
       "built": ["React", "React Hook", "CSS"],
       "title": "Wathing Movies!",
       "paragraph": [
-        "Implemented React hooks with useState, useEffect"
+        "This app is a single page app where users can search movies"
       ],
       "front": "https://github.com/yhan0704/tmdbMovie"
     },
@@ -99,7 +99,7 @@
       ],
       "title": "My Portfolio",
       "paragraph": [
-        "Developed responsive web design."
+        "This is my portfolio."
       ],
       "front": "https://github.com/yhan0704/portfolio",
       "demo":"http://www.youngchnai.com/"
