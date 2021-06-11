@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -10,12 +10,31 @@ import { SiMedium } from "react-icons/si";
 export default function Navigation() {
   const [open, setOpen] = useState(false);
 
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((seconds) => seconds + 3);
+    }, 40);
+    return () => clearInterval(interval);
+  }, []);
+
   const clickedHamburger = () => {
     setOpen(!open);
   };
+
+  const scale = (num, in_min, in_max, out_min, out_max) => {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+  };
+
   return (
     <div className="mainContainer">
-      <div className="mainPic">
+      <div
+        className="mainPic"
+        style={{
+          filter: `blur(${scale(seconds, 0, 90, 50, 0)}px)`,
+        }}
+      >
         <nav>
           <div className="logo">
             <a href="http://www.youngchnai.com/">Young.Han</a>

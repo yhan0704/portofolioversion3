@@ -11,39 +11,37 @@ export default function Projects() {
         <div className="projectItems">
           {projects.map((project) => {
             return (
-              <>
-                <div class="imageContainer">
-                  <img
-                    className="image"
-                    style={{
-                      borderRadius: "15%",
-                    }}
-                    src={project.image}
-                    alt={project.name}
-                  />
-                  <div class="overlay">
-                    <div class="icon">
-                      <p>{project.paragraph}</p>
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {" "}
-                        <i class="fas fa-sign-in-alt"></i>
-                      </a>{" "}
-                      <a
-                        href={project.front}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {" "}
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </div>
+              <div className="imageContainer" key={project.id}>
+                <img
+                  className="image"
+                  style={{
+                    borderRadius: "15%",
+                  }}
+                  src={project.image}
+                  alt={project.name}
+                />
+                <div className="overlay">
+                  <div className="icon">
+                    <p>{project.paragraph}</p>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <i className="fas fa-sign-in-alt"></i>
+                    </a>{" "}
+                    <a
+                      href={project.front}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <i className="fab fa-github"></i>
+                    </a>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

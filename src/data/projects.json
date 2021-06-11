@@ -35,7 +35,7 @@
       "title": "Tracking Park! ",
       "front": "https://github.com/yhan0704/GoParkApp-Frontend",
       "back": "https://github.com/yhan0704/GoParkApp-Backend",
-      "demo": "https://frontpark.herokuapp.com/"
+      "demo": "http://www.goparkview.com/login"
     },
     {
       "id": 2,
@@ -78,7 +78,8 @@
       "paragraph": [
         "This app is a single page app where users can search movies"
       ],
-      "front": "https://github.com/yhan0704/tmdbMovie"
+      "front": "https://github.com/yhan0704/tmdbMovie",
+      "demo" : "http://www.themovietonight.com/"
     },
     {
       "id": 4,

@@ -86,26 +86,24 @@ a:hover{
   background-image: url("../src/Image/sunset.jpg");
   position: relative;
   background-position: center;
-  height: 70vh;
+  height: 100vh;
   background-size: cover;
   z-index: 1;
 }
 
 .mainContainer .mainPic .intro {
-  margin:2% 10%;
+  height: 36vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: right;
   color: rgb(255, 255, 255);
   line-height: 5rem;
 }
 
-.mainContainer .mainPic .intro h1 {
-  text-align: right;
-  font-size: 2.3rem;
-}
-
 .mainContainer .mainPic .intro p {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: whitesmoke;
 }
 
@@ -138,6 +136,10 @@ a:hover{
 }
 
 .mainContainer .icons{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 13vh;
   margin-top:2rem;
   text-align: center;
 }
@@ -529,18 +531,22 @@ a:hover{
 }
 
 .hamburger a {
-  padding-bottom: 3%;
-  color: black;
+  font-weight: bold;
+  color: whitesmoke;
   text-align: center;
 }
 
 @media only screen and (max-width: 770px) {
   .mainContainer .hamburger {
+    color:white;
     display: flex;
     align-items: center;
     font-size: 22px;
     height: 23vh;
-    margin-right: 43%;
+  }
+
+  .mainContainer .hamburger svg{
+    font-size: 45px;
   }
 
   .mainContainer nav .tab {
@@ -549,11 +555,10 @@ a:hover{
   .mainContainer nav {
     top: 0;
     width: 100%;
-    padding: 2.5%;
-    display: flex;
-    justify-content: flex-end;
-    background-color: lightgray;
+    padding:0;
+    padding-top: 3%;
     z-index: 2;
+    justify-content: center;
   }
 
   .mainContainer nav .logo {
@@ -572,7 +577,7 @@ a:hover{
     display: block;
     font-size: 40px;
     cursor: pointer;
-    color: purple;
+    color: white;
   }
 
   .menuShow {
@@ -624,6 +629,11 @@ a:hover{
 }
 
 @media only screen and (max-width: 665px) {
+  /* main P */
+  .mainContainer .mainPic .intro p {
+    font-size: 1.2rem;
+    color: rgb(241, 243, 243);
+  }
   /* icon */
   .projectContainer .projectMain .projectItems{
     padding:0
@@ -641,12 +651,6 @@ a:hover{
   /* main */
   .mainContainer .mainPic .intro h1 {
     text-align: left;
-    font-size: 1.6rem;
-  }
-
-  .mainContainer .mainPic .intro p {
-    font-size: 1.3rem;
-    color: rgb(241, 243, 243);
   }
 
   /* about */

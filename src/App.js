@@ -8,18 +8,21 @@ import ScrollTopArrow from "./Components/ScrollTopArrow";
 import Footer from "./Components/Footer";
 import Icons from "./Components/Icons";
 import Contact from "./Components/Contact";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="container">
-      <Main />
-      <Icons />
-      <About />
-      <Projects />
-      <Blog />
-      <ScrollTopArrow />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Main />
+        <Icons />
+        <About />
+        <Projects />
+        <Blog />
+        <ScrollTopArrow />
+        <Contact />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
