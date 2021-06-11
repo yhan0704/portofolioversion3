@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import About from "./Components/About";
 import "./App.css";
 import Blog from "./Components/Blog";
@@ -11,10 +11,19 @@ import Contact from "./Components/Contact";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((seconds) => seconds + 3);
+    }, 20);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="container">
       <BrowserRouter>
-        <Main />
+        <Main seconds={seconds} />
         <Icons />
         <About />
         <Projects />

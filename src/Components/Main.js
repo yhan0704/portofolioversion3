@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
@@ -7,17 +7,8 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { DiGithubAlt } from "react-icons/di";
 import { SiMedium } from "react-icons/si";
 
-export default function Navigation() {
+export default function Navigation({ seconds }) {
   const [open, setOpen] = useState(false);
-
-  const [seconds, setSeconds] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds((seconds) => seconds + 3);
-    }, 40);
-    return () => clearInterval(interval);
-  }, []);
 
   const clickedHamburger = () => {
     setOpen(!open);
