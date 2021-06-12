@@ -17,18 +17,25 @@ export default function Navigation({ seconds }) {
   const scale = (num, in_min, in_max, out_min, out_max) => {
     return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
   };
-
   return (
     <div className="mainContainer">
       <div
+        className="innerText"
+        style={{
+          opacity: scale(seconds, 0, 100, 1, 0),
+        }}
+      >
+        <strong>{`${seconds} %`}</strong>
+      </div>
+      <div
         className="mainPic"
         style={{
-          filter: `blur(${scale(seconds, 0, 90, 50, 0)}px)`,
+          filter: `blur(${scale(seconds, 0, 100, 10, 0)}px)`,
         }}
       >
         <nav>
           <div className="logo">
-            <a href="http://www.youngchnai.com/">Young.Han</a>
+            <a href="https://youngchanhan.com/">Young.Han</a>
           </div>
           <div className="tab">
             <Link

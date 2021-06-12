@@ -52,6 +52,19 @@ a:hover{
 }
 
 /* main */
+.mainContainer{
+  position: relative;
+}
+.mainContainer .innerText{
+  font-size: 100px;
+  color:black;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
 .mainContainer nav {
   top: 0;
   width: 100%;
@@ -537,6 +550,9 @@ a:hover{
 }
 
 @media only screen and (max-width: 770px) {
+  .mainContainer .innerText{
+    font-size: 3rem;
+  }
   .mainContainer .hamburger {
     color:white;
     display: flex;

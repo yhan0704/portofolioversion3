@@ -15,11 +15,12 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((seconds) => seconds + 3);
-    }, 20);
+      if (seconds < 100) {
+        setSeconds((seconds) => seconds + 1);
+      }
+    }, 25);
     return () => clearInterval(interval);
-  }, []);
-
+  }, [seconds]);
   return (
     <div className="container">
       <BrowserRouter>
