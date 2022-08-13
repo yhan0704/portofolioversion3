@@ -1,68 +1,6 @@
 {
   "projects": [
-    {
-      "id": 1,
-      "name": "Go Park",
-      "image": "https://www.publicdomainpictures.net/pictures/30000/velka/bench-in-a-park.jpg",
-      "webImage": [
-        {
-          "name": "photo-1",
-          "url": "https://miro.medium.com/max/875/1*SGjSM95--nARpT8GKgPSnQ.png"
-        },
-        {
-          "name": "photo-2",
-          "url": "https://miro.medium.com/max/700/1*O3tMHsQTnUMrlW9u_3vOOg.png"
-        },
-        {
-          "name": "photo-3",
-          "url": "https://cdn-images-1.medium.com/max/800/1*kTeE5RSVuPWIMUTYRU_bGQ.png"
-        }
-      ],
-      "built": [
-        "React",
-        "Redux",
-        "Ruby on Rails",
-        "Postgres",
-        "CSS",
-        "Bootstrap",
-        "Mapbox",
-        "Particles.js",
-        "react-super-responsive-table"
-      ],
-      "paragraph": [
-        "This project is to inform users of Parks near the DMV area and to keep track of parks that users have visited"
-      ],
-      "title": "Tracking Park! ",
-      "front": "https://github.com/yhan0704/GoParkApp-Frontend",
-      "back": "https://github.com/yhan0704/GoParkApp-Backend",
-      "demo": "http://www.goparkview.com/login"
-    },
-    {
-      "id": 2,
-      "name": "Social",
-      "image": "https://cdn.pixabay.com/photo/2015/10/21/08/22/media-998990_1280.jpg",
-      "webImage": [
-        {
-          "name": "photo-1",
-          "url": "https://miro.medium.com/max/2414/1*EeR_Oq-Gcg-gLn7s79K9UA.png"
-        },
-        {
-          "name": "photo-2",
-          "url": "https://miro.medium.com/max/2412/1*4de-dkKf1AEAz1gySKtXFg.png"
-        },
-        {
-          "name": "photo-3",
-          "url": "https://miro.medium.com/max/1898/1*XTwDcQA0OFTowXRpRXt7hg.png"
-        }
-      ],
-      "built": ["Redux", "Thunk", "React", "Node.js","CSS"],
-      "title": "Social",
-      "paragraph": [
-        "This is a Full-Stack social network single page app and built with Mern-Stack"
-      ],
-      "front": "https://github.com/yhan0704/nodejsReactSocial",
-      "demo": "http://www.youngtechsocial.com/"
-    },
+
     {
       "id": 3,
       "name": "My Movie",
@@ -103,7 +41,7 @@
         "This is my portfolio."
       ],
       "front": "https://github.com/yhan0704/portfolio",
-      "demo":"http://www.youngchnai.com/"
+      "demo":"http://youngchanhan.com.s3-website-us-east-1.amazonaws.com/"
     }
   ],
   "blogs": [
@@ -136,3 +74,5 @@
     }
   ]
 }
+
+

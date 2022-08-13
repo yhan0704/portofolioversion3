@@ -25,7 +25,7 @@ export default function Navigation({ seconds }) {
           opacity: scale(seconds, 0, 100, 1, 0),
         }}
       >
-        <strong>{`${seconds} %`}</strong>
+        <strong>Young Han</strong>
       </div>
       <div
         className="mainPic"
@@ -35,7 +35,9 @@ export default function Navigation({ seconds }) {
       >
         <nav>
           <div className="logo">
-            <a href="https://youngchanhan.com/">Young.Han</a>
+            <a href="http://youngchanhan.com.s3-website-us-east-1.amazonaws.com/">
+              young.han
+            </a>
           </div>
           <div className="tab">
             <Link
@@ -139,7 +141,7 @@ export default function Navigation({ seconds }) {
           <div className="close"></div>
         </nav>
         <div className="intro">
-          <p> JavaScript Software Engineer</p>
+          <p> React Developer </p>
         </div>
         <div className="icons">
           <a
